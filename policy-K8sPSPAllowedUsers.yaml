@@ -1,0 +1,33 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sPSPAllowedUsers
+metadata:
+  name: avesha-policy-pss-restricted-v2022-running-as-non-root-user
+spec:
+  enforcementAction: deny
+  match:
+    excludedNamespaces:
+      - kube-system
+      - asm-system
+      - config-management-system
+      - config-management-monitoring
+      - cert-manager
+      - gke-connect
+      - istio-system
+      - resource-group-system
+      - gatekeeper-system
+      - anthos-identity-service
+    kinds:
+      - apiGroups:
+          - ''
+        kinds:
+          - Pod
+  parameters:
+    exemptImages:
+      - gcr.io/gke-release/asm/proxyv2:*
+      - gcr.io/anthos-baremetal-release/*
+      - gke.gcr.io/*
+    runAsUser:
+      ranges:
+        - max: 65536
+          min: 1
+      rule: MustRunAs
