@@ -12,18 +12,3 @@ spec:
           - ''
         kinds:
           - Service
-  parameters:
-    allowList:
-      - ^istiod-asm-[0-9]{4}-[0-9]$
-      - ^metrics-server$
-      - ^kubernetes$
-      - ^gke-connect-monitoring$
-      - ^kube-dns$
-      - ^istiod$
-      - ^canonical-service-controller-manager-metrics-service$
-      - ^default-http-backend$
-      - ^otel-collector$
-      - ^gatekeeper-webhook-service$
-      - ^antrea$
-      - ^istio-ingress$
-      - ^allowed-service$
