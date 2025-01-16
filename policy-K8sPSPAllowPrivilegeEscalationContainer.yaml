@@ -1,7 +1,7 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sPSPAllowPrivilegeEscalationContainer
 metadata:
-  name: policy-psp-allow-privilege-escalation
+  name: avesha-policy-psp-allow-privilege-escalation
 spec:
   enforcementAction: deny
   match:
