@@ -1,0 +1,21 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sPodsRequireSecurityContext
+metadata:
+  name: avesha-policy-k8spodsrequiresecurityContext
+spec:
+  enforcementAction: deny
+  match:
+    excludedNamespaces:
+      - kube-system
+      - config-management-system
+      - asm-system
+      - anthos-identity-service
+      - apigee
+    kinds:
+      - apiGroups:
+          - ''
+        kinds:
+          - Pod
+  parameters:
+    exemptImages:
+      - gcr.io/anthos-baremetal-release/*
