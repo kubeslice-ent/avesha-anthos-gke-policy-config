@@ -1,0 +1,23 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sPSPVolumeTypes
+metadata:
+  name: avesha-policy-pss-restricted-v2022-psp-volume-types
+spec:
+  enforcementAction: deny
+  match:
+    excludedNamespaces:
+      - kube-system
+      - gke-system
+    kinds:
+      - apiGroups:
+          - ''
+        kinds:
+          - Pod
+  parameters:
+    volumes:
+      - configMap
+      - downwardAPI
+      - emptyDir
+      - ephemeral
+      - projected
+      - secret
