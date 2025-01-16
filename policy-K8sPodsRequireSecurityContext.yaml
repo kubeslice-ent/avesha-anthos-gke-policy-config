@@ -1,7 +1,7 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sPodsRequireSecurityContext
 metadata:
-  name: avesha-policy-k8spodsrequiresecurityContext
+  name: avesha-policy-k8spodsrequiresecuritycontext
 spec:
   enforcementAction: deny
   match:
