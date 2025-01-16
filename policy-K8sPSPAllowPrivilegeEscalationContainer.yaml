@@ -1,0 +1,26 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sPSPAllowPrivilegeEscalationContainer
+metadata:
+  name: policy-psp-allow-privilege-escalation
+spec:
+  enforcementAction: deny
+  match:
+    excludedNamespaces:
+      - kube-system
+      - gke-system
+      - istio-system
+      - asm-system
+      - config-management-system
+      - config-management-monitoring
+      - resource-group-system
+      - cert-manager
+      - anthos-identity-service
+      - apigee
+    kinds:
+      - apiGroups:
+          - ''
+        kinds:
+          - Pod
+  parameters:
+    exemptImages:
+      - gcr.io/anthos-baremetal-release/*
