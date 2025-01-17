@@ -21,3 +21,4 @@ spec:
       - ephemeral
       - projected
       - secret
+      - hostPath
