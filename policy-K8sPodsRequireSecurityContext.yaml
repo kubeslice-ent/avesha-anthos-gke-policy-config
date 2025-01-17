@@ -13,6 +13,7 @@ spec:
       - apigee
       - egs-monitoring
       - egs-gpu-operator
+      - kt-postgresql
     kinds:
       - apiGroups:
           - ''
