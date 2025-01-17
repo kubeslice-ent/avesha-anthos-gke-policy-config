@@ -18,6 +18,7 @@ spec:
       - anthos-identity-service
       - egs-monitoring
       - egs-gpu-operator
+      - kt-postgresql
     kinds:
       - apiGroups:
           - ''
