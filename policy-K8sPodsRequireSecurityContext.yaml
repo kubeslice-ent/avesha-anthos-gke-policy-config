@@ -11,6 +11,8 @@ spec:
       - asm-system
       - anthos-identity-service
       - apigee
+      - egs-monitoring
+      - egs-gpu-operator
     kinds:
       - apiGroups:
           - ''
