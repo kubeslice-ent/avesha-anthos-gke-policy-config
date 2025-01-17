@@ -8,8 +8,6 @@ spec:
     excludedNamespaces:
       - kube-system
       - gke-system
-      - egs-monitoring
-      - egs-gpu-operator
     kinds:
       - apiGroups:
           - ''
