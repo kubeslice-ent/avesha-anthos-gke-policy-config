@@ -3,7 +3,7 @@ kind: K8sPSSRunAsNonRoot
 metadata:
   name: avesha-policy-pss-restricted-v2022-running-as-non-root
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     excludedNamespaces:
       - kube-system
