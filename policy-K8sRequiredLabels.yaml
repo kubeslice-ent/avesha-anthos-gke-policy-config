@@ -3,7 +3,7 @@ kind: K8sRequiredLabels
 metadata:
   name: avesha-policy-k8srequiredlabels
 spec:
-  enforcementAction: deny
+  enforcementAction: dryrun
   match:
     kinds:
       - apiGroups: [""]
