@@ -3,7 +3,7 @@ kind: K8sBlockLoadBalancer
 metadata:
   name: avesha-policy-block-all-lb-service
 spec:
-  enforcementAction: deny
+  enforcementAction: dryrun
   match:
     excludedNamespaces:
       - apigee
