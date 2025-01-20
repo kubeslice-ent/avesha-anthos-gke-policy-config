@@ -3,7 +3,7 @@ kind: K8sPodsRequireSecurityContext
 metadata:
   name: avesha-policy-k8spodsrequiresecuritycontext
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     excludedNamespaces:
       - kube-system
