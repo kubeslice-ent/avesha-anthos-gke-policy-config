@@ -3,7 +3,7 @@ kind: K8sPSPPrivilegedContainer
 metadata:
   name: avesha-policy-pss-baseline-v2022-privileged-containers
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     excludedNamespaces:
       - kube-system
