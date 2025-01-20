@@ -3,7 +3,7 @@ kind: K8sPSPCapabilities
 metadata:
   name: avesha-policy-pss-restricted-v2022-capabilities
 spec:
-  enforcementAction: deny
+  enforcementAction: dryrun
   match:
     excludedNamespaces:
       - kube-system
