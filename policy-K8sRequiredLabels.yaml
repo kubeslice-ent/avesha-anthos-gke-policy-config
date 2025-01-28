@@ -10,4 +10,4 @@ spec:
         kinds: ["Namespace"]
   parameters:
     labels:
-      - key: "avesha-tower-name"
+      - key: "application"
