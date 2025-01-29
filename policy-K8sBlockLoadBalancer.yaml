@@ -8,6 +8,8 @@ spec:
     excludedNamespaces:
       - apigee
       - ingress-nginx
+      - kubeslice-controller
+      - egs-monitoring
     kinds:
       - apiGroups:
           - ''
