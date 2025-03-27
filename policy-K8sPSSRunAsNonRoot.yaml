@@ -15,9 +15,6 @@ spec:
       - capi-system
       - vm-system
       - gke-managed-cim
-      - egs-monitoring
-      - egs-gpu-operator
-      - kt-postgresql
     kinds:
       - apiGroups:
           - ''
