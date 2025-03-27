@@ -16,9 +16,6 @@ spec:
       - resource-group-system
       - gatekeeper-system
       - anthos-identity-service
-      - egs-monitoring
-      - egs-gpu-operator
-      - kt-postgresql
     kinds:
       - apiGroups:
           - ''
