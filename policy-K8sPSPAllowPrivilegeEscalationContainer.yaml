@@ -16,6 +16,9 @@ spec:
       - cert-manager
       - anthos-identity-service
       - apigee
+      - egs-monitoring
+      - egs-gpu-operator
+      - kt-postgresql
     kinds:
       - apiGroups:
           - ''
