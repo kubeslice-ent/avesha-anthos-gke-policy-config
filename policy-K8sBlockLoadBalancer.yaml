@@ -8,6 +8,9 @@ spec:
     excludedNamespaces:
       - apigee
       - ingress-nginx
+      - egs-monitoring
+      - egs-gpu-operator
+      - kt-postgresql
     kinds:
       - apiGroups:
           - ''
